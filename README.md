@@ -29,17 +29,17 @@ following hamiltonian:
 H=- \sum_{i=1}^{N} J_{ij} s_i s_j - \sum h_i s_i 		 s=0,1
 
 the input file (which we name "input.hj") must have the following structure:
-
-> N (the number of spins)
-> h_1
-> h_2
-> ...
-> h_N
-> J_{12}
-> J_{13}
-> ...
-> J_{(N-1)N}
-
+```bash
+ N (the number of spins)
+ h_1
+ h_2
+ ...
+ h_N
+ J_{12}
+ J_{13}
+ ...
+ J_{(N-1)N}
+```
 Pleas note the the input file should have extension *.hj*  
 
 # Running the algorithm 
