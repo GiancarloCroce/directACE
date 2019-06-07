@@ -23,7 +23,7 @@ The input file should contain the hamiltonian of the system you want to study.
 
 Here we focus on Ising spin variables, if you wish to use Boolean representation just replace everywhere "spin_pm1" with "spin01"
 
-As an example, let's consider a system of $N$ spins interacting via the
+As an example, let's consider a system of N spins interacting via the
 following hamiltonian:
 
 H=- \sum_{i=1}^{N} J_{ij} s_i s_j - \sum h_i s_i 		 s=0,1
@@ -53,17 +53,19 @@ $INPUT_FILE is the name of the input file *WITHOUT the extensions .hj*
 For example my hamiltonian is stored in *input_random_ER.hj*, so $INPUT_FILE should be *input_random_ER*
 
 This will produce three files:
+
 - out.sce: for the free energy
 - out.mc: for the magnetizations
 - out.ccs: for the connected correlations
 
 optional flags are
+```
 -v: produce verbose output
 -b: to specify the inverse temperature 
 -kmax: to specify a max cluster length 
 -kmin: to specify a minimal cluster length (the algorithm will construct all clusters up to kmin)
 -tmin: to specify a minimal theta that when reached the algorithm will stop.
-
+```
 eg.
 ```bash
 ./diretto.out -d . -i input_random_ER -lax -v -b 0.7 -kmin 4
