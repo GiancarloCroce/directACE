@@ -10,7 +10,7 @@ the equilibrium observables of spin systems with arbitrary two-spin interactions
 
 ## Download and install
 
-1) Download your local copy of the repository (https://help.github.com/en/articles/cloning-a-repository)
+1) Download your local copy of the repository
 2) Run the following commands in the terminal 
 ```bash
 $ ./run_make.sh
