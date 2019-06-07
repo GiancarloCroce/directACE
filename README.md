@@ -49,8 +49,9 @@ To run the directACE code just type:
 ```
 
 where $PWD is the curent working directory directory, if you want to specify a different one just replace $PWD with your working directory.
-$INPUT_FILE is the name of the input file *WITHOUT the extensions .hj*
-For example my hamiltonian is stored in *input_random_ER.hj*, so $INPUT_FILE should be *input_random_ER*
+$INPUT_FILE is the name of the input file *WITHOUT the extensions .hj*.
+
+For example if my Hamiltonian is stored in *input_random_ER.hj*, so $INPUT_FILE should be *input_random_ER*
 
 This will produce three files:
 
