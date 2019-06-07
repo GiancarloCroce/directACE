@@ -21,27 +21,24 @@ $ ./run_make.sh
 # Input file
 The input file should contain the hamiltonian of the system you want to study.
 
-Here we focus on boolean spin variables, if you wish to use Ising representation just replace everywhere "spin01" with "spin_pm1"
+Here we focus on Ising spin variables, if you wish to use Boolean representation just replace everywhere "spin_pm1" with "spin01"
 
 As an example, let's consider a system of $N$ spins interacting via the
 following hamiltonian:
 
-$$
-\begin{equation}
-H=- \sum_{i=1}^{N} J_{ij} \sigma_i \sigma_j - \sum h_i \sigma_i 		con \sigma_i=0,1
-\end{equation}
-$$
+H=- \sum_{i=1}^{N} J_{ij} s_i s_j - \sum h_i s_i 		 s=0,1
 
 the input file (which we name "input.hj") must have the following structure:
-> $N$ (the number of spins)
-> $h_1$
-> $h_2$
+
+> N (the number of spins)
+> h_1
+> h_2
 > ...
-> $h_N$
-> $J_{12}$
-> $J_{13}$
+> h_N
+> J_{12}
+> J_{13}
 > ...
-> $J_{(N-1)N}$
+> J_{(N-1)N}
 
 Pleas note the the input file should have extension *.hj*  
 
