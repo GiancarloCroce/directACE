@@ -7,7 +7,7 @@ the equilibrium observables of spin systems with arbitrary two-spin interactions
 
 The directACE code is based on the code used for the inverse Ising problem in https://github.com/johnbarton/ACE.
 
-References:
+References for the inverse Ising problem:
 - John P Barton, Eleonora De Leonardis, Alice Coucke, and Simona Cocco. Ace: adaptive cluster
 expansion for maximum entropy graphical model inference. Bioinformatics, 32(20):3089–
 3097, 2016.
