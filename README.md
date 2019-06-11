@@ -5,6 +5,16 @@ Direct ACE is a C++ based algorithm to obtain numerically approximate
 solutions of the direct Ising problem, that is, to compute the free energy and
 the equilibrium observables of spin systems with arbitrary two-spin interactions.
 
+The directACE code is based on the code used for the inverse Ising problem in https://github.com/johnbarton/ACE.
+
+References:
+- John P Barton, Eleonora De Leonardis, Alice Coucke, and Simona Cocco. Ace: adaptive cluster
+expansion for maximum entropy graphical model inference. Bioinformatics, 32(20):3089–
+3097, 2016.
+- Simona Cocco and Rémi Monasson. Adaptive cluster expansion for the inverse ising problem:
+convergence, algorithm and tests. Journal of Statistical Physics, 147(2):252–314, 2012.
+
+
 *Please note that a real documentation is not available yet, but we report here some usage examples to get started.*
 
 
@@ -69,5 +79,5 @@ optional flags are
 ```
 eg.
 ```bash
-./diretto.out -d . -i input_random_ER -lax -v -b 0.7 -kmin 4
+./directACE_spin01.out -d . -i input_random_ER -lax -v -b 0.7 -kmin 4
 ```
