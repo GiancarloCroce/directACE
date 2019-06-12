@@ -36,7 +36,7 @@ Here we focus on Ising spin variables, if you wish to use Boolean representation
 As an example, let's consider a system of N spins interacting via the
 following hamiltonian:
 
-H=- \sum_{i=1}^{N} J_{ij} s_i s_j - \sum h_i s_i 		 s=0,1
+H=- \sum_{i=1}^{N} J_{ij} s_i s_j - \sum h_i s_i 		 s_i={-1,1}
 
 the input file (which we name "input.hj") must have the following structure:
 ```bash
@@ -55,7 +55,7 @@ Pleas note the the input file should have extension *.hj*
 # Running the algorithm 
 To run the directACE code just type:
 ```bash
-./diretto.out -d $PWD -i $INPUT_FILE -lax 
+./directACE_spin_pm1.out -d $PWD -i $INPUT_FILE  
 ```
 
 where $PWD is the curent working directory directory, if you want to specify a different one just replace $PWD with your working directory.
@@ -79,5 +79,5 @@ optional flags are
 ```
 eg.
 ```bash
-./directACE_spin01.out -d . -i input_random_ER -lax -v -b 0.7 -kmin 4
+./directACE_spin_pm1.out -d . -i input_random_ER  -v -b 0.7 -kmin 4
 ```
