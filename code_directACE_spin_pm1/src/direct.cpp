@@ -168,7 +168,7 @@ void optimizeF(const std::vector<double> &J, double &F, std::vector<double> &gra
 
     //cout << "lungh " << length << endl;
     //for (int i=0;i<grad.size();i++) {    cout << "grad[i] " << grad[i] << endl;} 
-
+   
     //cout << " Z " << Z << endl;  
     F = log(Z) ;	
 

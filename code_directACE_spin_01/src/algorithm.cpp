@@ -636,7 +636,7 @@ void run(RunParameters &r) {
 
     else printf("Problem retrieving data from file: %s",r.getInfile().c_str());
 
-    cout << "Number of spin: "<< N << endl;
+    cout << "Number of spins: "<< N << endl;
     cout << "Inverse temperature: " << r.beta << endl;
     //random starting point for free energy and correlation
     oldF=double(rand())/RAND_MAX; 
@@ -666,7 +666,7 @@ void run(RunParameters &r) {
     computeF0andC0single_ptr=&computeF0andC0_Empty;
     computeF0andC0_ptr=&computeF0andC0_Empty;
 
-    printf("Computing Ising model correlations using theta = %.8e \n",r.theta);
+    printf("Starting theta = %.8e \n",r.theta);
     if(r.lax) cout <<"LAX selection rule"<< endl;
     else cout <<"STRICT selection rule"<< endl;
     printf("Storage size = %d, key size = %d\n",storageSize,keySize);
@@ -1022,7 +1022,7 @@ int main(int argc, char *argv[]) {
         else if (strcmp(argv[i],"-kmax")==0)   {if (++i==argc) break; else  r.kmax=strtodouble(argv[i]);      }
         else if (strcmp(argv[i],"-kmin")==0)   {if (++i==argc) break; else  r.kmin=strtodouble(argv[i]);      }
 
-        else if (strcmp(argv[i],"-lax")==0)   {  r.lax=true; }
+        else if (strcmp(argv[i],"-strict")==0)   {  r.lax=false; }
         else if (strcmp(argv[i],"-v")==0  || strcmp(argv[i],"-verbose")==0) {  r.useVerbose=true;             }  
 
         else printf("Unrecognized command! '%s'\n",argv[i]);

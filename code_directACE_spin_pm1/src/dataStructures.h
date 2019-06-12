@@ -154,7 +154,7 @@ public:
         thetaMax=pow(10.0,0);
         thetaStep=1.05;
         beta=1;
-        lax=false;
+        lax=true;
         useSupplementaryOutput=false;
         useVerbose=false;
         
