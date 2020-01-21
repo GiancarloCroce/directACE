@@ -4,6 +4,10 @@
 Direct ACE is a C++ based algorithm to obtain numerically approximate
 solutions of the direct Ising problem, that is, to compute the free energy and
 the equilibrium observables of spin systems with arbitrary two-spin interactions.
+It is described in the publication (available at https://link.springer.com/article/10.1140/epjb/e2019-100313-9)
+
+Cocco S., Croce G., Zamponi F., Adaptive cluster expansion for Ising spin models, EPJB (2019)
+
 
 The directACE code is based on the code used for the inverse Ising problem in https://github.com/johnbarton/ACE.
 
